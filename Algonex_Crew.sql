@@ -22,4 +22,43 @@ INSERT INTO algonex_crew VALUES (101,'228p1a0556','Nanda','nanda@gmail.com',8765
                                 (113,'228p1a0568','Mohan','mohan@gmail.com',8008940874,'2026-08-17 23:05:00'),
                                 (114,'228p1a0569','Narendhra','nari@gmail.com',8008940874,'2026-08-17 23:05:00');
 show tables;             
-select* from Algonex_Crew;                   
+select* from Algonex_Crew;
+-- Add a column
+alter table Algonex_Crew
+Add column city varchar(20);
+-- rename column name
+alter table Algonex_Crew
+rename column phone to mobile_num;
+-- remove a column
+alter table Algonex_Crew
+drop column city;
+select 
+      crew_id,
+      full_name,
+      mobile_num
+from Algonex_Crew;      
+-- filter with where
+select
+      crew_id,
+      full_name,
+      mobile_num
+from Algonex_Crew
+where mobile_num=9876543210;
+select*from Algonex_Crew;   
+-- GROUP BR
+select
+     email,
+     count(*) as mobile_num
+from algonex_crew
+group by email;     
+-- SHOW INDEX
+SHOW INDEX FROM algonex_crew;
+-- EXPLAN
+explain select 
+   crew_id,full_name
+FROM algonex_crew
+where email='nanda@gmail.com';
+-- clauses & constraints
+select*FROM algonex_crew
+where crew_id>10;
+            
