@@ -61,4 +61,10 @@ where email='nanda@gmail.com';
 -- clauses & constraints
 select*FROM algonex_crew
 where crew_id>10;
-            
+INSERT INTO algonex_crew VALUES (115,'228p1a0556','Raju','raju@gmail.com',8765432109,'2026-08-17 23:05:00'),
+								(116,'228p1a0557','kumar','kumar@gmail.com',9876543210,'2026-08-17 23:15:00'),
+                                (117,'228p1a0558','Bargav','bargav@gmail.com',7654321098,'2026-08-17 23:25:00'),
+								(118,'228p1a0558','Ajay','ajay@gmail.com',7654321098,'2026-08-17 23:25:00'),
+                                (119,'228p1a0559','Suresh','suresh@gmail.com',8008940874,'2026-08-17 23:05:00'),
+                                (120,'228p1a0560','RGV','rgv@gmail.com',8008940874,'2026-08-17 23:05:00');
+select*from algonex_crew;                                   
